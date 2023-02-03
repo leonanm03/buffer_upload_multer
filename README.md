@@ -8,13 +8,13 @@ No back-end, é necessário escrever o código para receber os arquivos enviados
 Passos que podem ser seguidos pra configurar o recebimento de arquivos no back-end:
 
 
-1- Instalar o multer para lidar com o upload de arquivos (npm install multer)
+#### 1- Instalar o multer para lidar com o upload de arquivos (npm install multer)
 
-2- Configurar a rota que irá receber o upload
+#### 2- Configurar a rota que irá receber o upload
 
-3- processar o arquivo
+#### 3- processar o arquivo
 
-4- Armazenar o arquivo
+#### 4- Armazenar o arquivo
 
  na pasta "back" deste repositório há um exemplo de código que recebe o upload de arquivo.
  
@@ -25,27 +25,33 @@ Passos que podem ser seguidos pra configurar o recebimento de arquivos no back-e
 
 Com a biblioteca multer, você pode fazer coisas como:
 
-Definir o tipo de arquivos que você quer aceitar (por exemplo, somente imagens)
-Definir o tamanho máximo do arquivo
-Escolher onde armazenar o arquivo (por exemplo, na memória ou em um caminho de arquivo específico no disco)
-Configurar um nome personalizado para o arquivo quando ele é salvo no servidor
-Validar o conteúdo do arquivo antes de salvar (por exemplo, verificar se o arquivo é uma imagem válida)
+
+#### 1-Definir o tipo de arquivos que você quer aceitar (por exemplo, somente imagens)
+
+#### 2- Definir o tamanho máximo do arquivo
+
+#### 3- Escolher onde armazenar o arquivo (por exemplo, na memória ou em um caminho de arquivo específico no disco)
+
+#### 4- Configurar um nome personalizado para o arquivo quando ele é salvo no servidor
+
+#### 5- Validar o conteúdo do arquivo antes de salvar (por exemplo, verificar se o arquivo é uma imagem válida)
 
 
-Em resumo, a biblioteca multer ajuda a preparar seu back-end para o upload de arquivos, tornando o processo de manipulação de arquivos mais fácil e garantindo que o arquivo seja processado de maneira segura e eficiente.
+
+A biblioteca multer ajuda a preparar seu back-end para o upload de arquivos, tornando o processo de manipulação de arquivos mais fácil e garantindo que o arquivo seja processado de maneira segura e eficiente.
 
 
 ## É uma boa prática armazenarmos os arquivos upados na própria máquina do servidor? Por quê?
 
 Não, pois armazenar os arquivos na máquina no servidor pode ter algumas consequências, como:
 
-1- Limitação de espaço de armazenamento: Armazenar grandes quantidades de arquivos no disco rígido do servidor pode rapidamente esgotar o espaço de armazenamento disponível.
+#### 1- Limitação de espaço de armazenamento: Armazenar grandes quantidades de arquivos no disco rígido do servidor pode rapidamente esgotar o espaço de armazenamento disponível.
 
 
-2- Problemas de performance: Armazenar muitos arquivos em uma única máquina pode afetar negativamente o desempenho do servidor, especialmente se houver uma grande quantidade de solicitações de download de arquivos.
+#### 2- Problemas de performance: Armazenar muitos arquivos em uma única máquina pode afetar negativamente o desempenho do servidor, especialmente se houver uma grande quantidade de solicitações de download de arquivos.
 
 
-3- Fraqueza da segurança: Armazenar arquivos sensíveis na máquina do servidor pode ser arriscado, já que, em caso de invasão ou falha na segurança, esses arquivos podem ser comprometidos.
+#### 3- Fraqueza da segurança: Armazenar arquivos sensíveis na máquina do servidor pode ser arriscado, já que, em caso de invasão ou falha na segurança, esses arquivos podem ser comprometidos.
 
 
 Por esses motivos, é recomendável armazenar arquivos em serviços de armazenamento em nuvem, como o Amazon S3.
@@ -61,23 +67,23 @@ Amazon S3 (Simple Storage Service) é um serviço de armazenamento em nuvem da A
 No contexto de upload de arquivos, o Amazon S3 pode desempenhar o papel de um repositório de armazenamento seguro para arquivos enviados pelos usuários. Ao invés de armazenar arquivos na máquina do servidor, o back-end pode enviá-los diretamente para o Amazon S3, que se encarrega de garantir sua disponibilidade e segurança. Além disso, o Amazon S3 oferece recursos de gerenciamento de arquivos, como a capacidade de recuperar ou excluir arquivos, o que pode ser útil em caso de erros ou incidentes.
 
 
-Em resumo, usar o Amazon S3 como uma solução de armazenamento para arquivos carregados pode melhorar a escalabilidade, a disponibilidade e a segurança do seu aplicativo.
+Usar o Amazon S3 como uma solução de armazenamento para arquivos carregados pode melhorar a escalabilidade, a disponibilidade e a segurança do seu aplicativo.
 
 
 ## Que outras alternativas existem ao Amazon S3?
 
-Google Cloud Storage: É um serviço de armazenamento em nuvem oferecido pelo Google Cloud Platform.
+#### Google Cloud Storage: É um serviço de armazenamento em nuvem oferecido pelo Google Cloud Platform.
 
 
-Microsoft Azure Blob Storage: É um serviço de armazenamento de objetos oferecido pelo Microsoft Azure.
+#### Microsoft Azure Blob Storage: É um serviço de armazenamento de objetos oferecido pelo Microsoft Azure.
 
 
-DigitalOcean Spaces: É um serviço de armazenamento em nuvem oferecido pelo DigitalOcean.
+#### DigitalOcean Spaces: É um serviço de armazenamento em nuvem oferecido pelo DigitalOcean.
 
 
-Backblaze B2: É um serviço de armazenamento em nuvem oferecido pela Backblaze.
+#### Backblaze B2: É um serviço de armazenamento em nuvem oferecido pela Backblaze.
 
 
-IBM Cloud Object Storage: É um serviço de armazenamento de objetos em nuvem oferecido pela IBM.
+#### IBM Cloud Object Storage: É um serviço de armazenamento de objetos em nuvem oferecido pela IBM.
 
 
