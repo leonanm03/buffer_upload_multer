@@ -7,11 +7,17 @@ Para fazer upload de arquivos no front-end, podemos criar um input do tipo "file
 No back-end, é necessário escrever o código para receber os arquivos enviados pelo fron-end, para que eles sejam processados e armazenados em algum lugar(um banco de dados, ou sistema de arquivos).
 Passos que podem ser seguidos pra configurar o recebimento de arquivos no back-end:
 
-1- Instalar o multer para lidar com o upload de arquivos
+
+1- Instalar o multer para lidar com o upload de arquivos (npm install multer)
+
 2- Configurar a rota que irá receber o upload
+
 3- processar o arquivo
+
 4- Armazenar o arquivo
+
  na pasta "back" deste repositório há um exemplo de código que recebe o upload de arquivo.
+ 
  
  ## Como a biblioteca multer ajuda a prepararmos nosso back-end?
  
